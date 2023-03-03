@@ -13,3 +13,103 @@
  *= require_tree .
  *= require_self
  */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px 5%;
+}
+
+h1 {
+  color: #b88c60;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.user-div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  background-color: #faedcd;
+}
+
+.user-div img {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  height: 100%;
+}
+
+.colored-a {
+  text-decoration: none;
+  color: #b88c60;
+  display: block;
+}
+
+.name-and-post {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  width: 100%;
+}
+
+.bio {
+  border: 1px solid #faedcd;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.bio span {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+.post-div {
+  border: 1px solid #faedcd;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.post-number {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.see-all-btn {
+  border: none;
+  background-color: #faedcd;
+  color: #b88c60;
+  padding: 10px;
+}
+
+.see-all-btn:hover {
+  background-color: #fce4a9;
+}
+
+.comments-likes-div {
+  text-align: right;
+}
+
+.comments-likes-div span {
+  font-size: 13px;
+}
+
+.commentor {
+  font-size: 12px;
+}

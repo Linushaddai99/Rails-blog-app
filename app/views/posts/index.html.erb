@@ -1,1 +1,34 @@
-<h1>Here is a list of posts for a given user<h1>
+<div>
+<div class='user-index'>
+    <div class='colored-a'>
+        <div class='user-div'>
+            <div>
+              <img src="<%= @user.photo %>">
+            </div>
+            <div class='name-and-post'>
+                <p><%= @user.name %><p>
+                <p>Number of posts: <%= @user.posts.count %><p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% index = 1 %>
+<% @posts.each do |post| %>
+    <a href="/users/<%= @user.id%>/posts/<%= post.id %>">
+    <div class='post-div'>
+        <span  class='post-number'>Post <%= index %></span>
+            <p><%= post.text %></p>
+        <div class='comments-likes-div'>
+            <span>comments: <%= post.comments.count %>,</span>
+            <span>likes: <%= post.likes.count %></span>
+        </div>
+       
+        <% post.five_most_recent_comments.each do |comment| %>
+            <span class='commentor'><%= comment.author.name %>: </span>
+            <span><%= comment.text %></span><br>
+        <% end %>
+    </div>
+    </a>
+    <% index = index + 1 %>
+<% end %>
