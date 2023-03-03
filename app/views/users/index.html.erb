@@ -1,1 +1,18 @@
-<h1>Here is a list for all saved users</h1>
+<div class='user-index'>
+  <h1>Users</h1>
+
+  <% @users.each do |user| %>
+    <a class='colored-a' href="/users/<%= user.id %>">
+      <div class='user-div'>
+        <div>
+          <img src="<%= user.photo %>" />
+        </div>
+        <div class='name-and-post'>
+          <p><%= user.name %><p>
+          <p>Number of posts: <%= user.posts.count %></p>
+        </div>
+      </div>
+    </a>
+  <% end %>
+</div>
+
