@@ -7,11 +7,14 @@
             <span>comments: <%= @post.comments.count %>,</span>
             <span>likes: <%= @post.likes.count %></span>
         </div>
-        <p><%= @post.text %></p>
+        <p><%= @post.title %></p>
        
         <% @post.comments.each do |comment| %>
             <span class='commentor'><%= comment.author.name %>: </span>
             <span><%= comment.text %></span><br>
         <% end %>
     </div>
-    <% index = index + 1 %>
+<% index = index + 1 %>
+
+<%= link_to 'Create comment', new_user_post_comment_path(@post.author, @post) %>
+<%= render 'partials/likes' %>
