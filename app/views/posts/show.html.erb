@@ -7,11 +7,22 @@
             <span>comments: <%= @post.comments.count %>,</span>
             <span>likes: <%= @post.likes.count %></span>
         </div>
-        <p><%= @post.text %></p>
+        <p><%= @post.title %></p>
        
         <% @post.comments.each do |comment| %>
             <span class='commentor'><%= comment.author.name %>: </span>
             <span><%= comment.text %></span><br>
         <% end %>
     </div>
-    <% index = index + 1 %>
+<% index = index + 1 %>
+
+<%= form_with(model: @comment, url: "/users/#{@post.author.id}/posts/#{@post.id}/comments", method: :post, scope: :comment) do |form| %>
+  <div class="form-group">
+    <%= form.label :text %>
+    <%= form.text_area :text, class: 'form-control' %>
+  </div>
+
+  <%= form.submit 'Create Comment', class: 'btn btn-primary' %>
+<% end %>
+
+<%= render 'partials/likes' %>

@@ -13,12 +13,14 @@
     </div>
 </div>
 
+<%= link_to 'create new post', new_user_post_path %>
+
 <% index = 1 %>
 <% @posts.each do |post| %>
     <a href="/users/<%= @user.id%>/posts/<%= post.id %>">
     <div class='post-div'>
         <span  class='post-number'>Post <%= index %></span>
-            <p><%= post.text %></p>
+            <p><%= post.title %></p>
         <div class='comments-likes-div'>
             <span>comments: <%= post.comments.count %>,</span>
             <span>likes: <%= post.likes.count %></span>
