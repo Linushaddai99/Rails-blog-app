@@ -16,5 +16,13 @@
     </div>
 <% index = index + 1 %>
 
-<%= link_to 'Create comment', new_user_post_comment_path(@post.author, @post) %>
+<%= form_with(model: @comment, url: "/users/#{@post.author.id}/posts/#{@post.id}/comments", method: :post, scope: :comment) do |form| %>
+  <div class="form-group">
+    <%= form.label :text %>
+    <%= form.text_area :text, class: 'form-control' %>
+  </div>
+
+<%= form.submit 'Create Comment', class: 'btn btn-primary' %>
+<% end %>
+
 <%= render 'partials/likes' %>
