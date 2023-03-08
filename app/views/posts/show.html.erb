@@ -8,6 +8,7 @@
             <span>likes: <%= @post.likes.count %></span>
         </div>
         <p><%= @post.title %></p>
+        <p><%= @post.text %></p>
        
         <% @post.comments.each do |comment| %>
             <span class='commentor'><%= comment.author.name %>: </span>

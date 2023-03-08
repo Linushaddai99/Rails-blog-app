@@ -17,10 +17,13 @@
 
 <% index = 1 %>
 <% @posts.each do |post| %>
-    <a href="/users/<%= @user.id%>/posts/<%= post.id %>">
+    
     <div class='post-div'>
         <span  class='post-number'>Post <%= index %></span>
-            <p><%= post.title %></p>
+        <a href="/users/<%= @user.id%>/posts/<%= post.id %>">
+            <p>Title: <%= post.title %></p>
+        </a>
+            <p><%= post.text %></p>
         <div class='comments-likes-div'>
             <span>comments: <%= post.comments.count %>,</span>
             <span>likes: <%= post.likes.count %></span>
@@ -31,6 +34,5 @@
             <span><%= comment.text %></span><br>
         <% end %>
     </div>
-    </a>
     <% index = index + 1 %>
 <% end %>
