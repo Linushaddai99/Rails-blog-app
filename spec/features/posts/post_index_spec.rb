@@ -3,9 +3,9 @@ require 'rails_helper'
 RSpec.describe 'post#index', type: :feature do
   before :each do
     @user1 = User.create(name: 'Simon', photo: 'https://randomuser.me/api/portraits/men/1.jpg',
-                          bio: 'Teacher in South Africa')
+                         bio: 'Teacher in South Africa')
     @user2 = User.create(name: 'Peter', photo: 'https://randomuser.me/api/portraits/women/1.jpg',
-                          bio: 'Teacher in Australia')
+                         bio: 'Teacher in Australia')
 
     @post_one = Post.create(author: @user1, title: 'Story', text: 'This is my first post')
     @post_two = Post.create(author: @user1, title: 'Hello', text: 'This is my secound post')

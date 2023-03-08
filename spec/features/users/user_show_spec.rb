@@ -2,8 +2,10 @@ require 'rails_helper'
 
 RSpec.describe 'user#show', type: :feature do
   before :each do
-    @user1 = User.create(name: 'Simon', photo: 'https://randomuser.me/api/portraits/men/1.jpg', bio: 'Teacher in South Africa')
-    @user2 = User.create(name: 'Lilly Brian', photo: 'https://randomuser.me/api/portraits/women/1.jpg', bio: 'Teacher from Poland.')
+    @user1 = User.create(name: 'Simon', photo: 'https://randomuser.me/api/portraits/men/1.jpg',
+                         bio: 'Teacher in South Africa')
+    @user2 = User.create(name: 'Lilly Brian', photo: 'https://randomuser.me/api/portraits/women/1.jpg',
+                         bio: 'Teacher from Poland.')
 
     @post_one = Post.create(author: @user1, title: 'My First trip to China', text: 'This is my first post')
 
