@@ -23,3 +23,9 @@
     padding: 10px;
     cursor: pointer;
 }
+
+.confirmation .btn:hover {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}

@@ -37,3 +37,9 @@
     padding: 10px;
     cursor: pointer;
 }
+
+.login-form .btn:hover {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
