@@ -29,10 +29,19 @@
 
 .sign-up-form .btn {
     background-color: white;
+    border: 1px solid white;
     display: block;
-    margin: 0 auto;
-    border: none;
+    margin: 30px auto;
     outline: none;
     border-radius: 8px;
     padding: 10px;
+    cursor: pointer;
+    width: 200px;
+    transition: background-color 300ms ease-in-out;
+}
+
+.sign-up-form .btn:hover {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
 }
