@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-
+ @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;600;800&family=Poppins:wght@300;400;600;800&display=swap');
 *,
 *::before,
 *::after {
@@ -24,6 +24,7 @@
 
 body {
   padding: 30px 5%;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
