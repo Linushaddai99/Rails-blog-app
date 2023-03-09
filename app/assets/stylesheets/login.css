@@ -1,45 +1,45 @@
 .login-form {
-    background-color: #cdb4db;
-    color: black;
-    width: 90%;
-    max-width: 500px;
-    margin: 50px auto;
-    border-radius: 10px;
-    padding: 20px;
+  background-color: #cdb4db;
+  color: black;
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .login-form h2 {
-    color: white;
-    margin-bottom: 12px;
+  color: white;
+  margin-bottom: 12px;
 }
 
 .field {
-    margin-bottom: 20px;
-    font-size: 14px;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
 .input {
-    width: 100%;
-    padding: 7px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    margin-top: 8px;
+  width: 100%;
+  padding: 7px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 8px;
 }
 
 .login-form .btn {
-    background-color: white;
-    display: block;
-    margin: 0 auto;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    padding: 10px;
-    cursor: pointer;
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .login-form .btn:hover {
-    border: 1px solid white;
-    background-color: transparent;
-    color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
 }

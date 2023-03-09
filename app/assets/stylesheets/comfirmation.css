@@ -1,31 +1,31 @@
 .confirmation {
-    background-color: #cdb4db;
-    color: black;
-    width: 90%;
-    max-width: 500px;
-    margin: 50px auto;
-    border-radius: 10px;
-    padding: 20px;
+  background-color: #cdb4db;
+  color: black;
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .confirmation h2 {
-    color: white;
-    margin-bottom: 12px;
+  color: white;
+  margin-bottom: 12px;
 }
 
 .confirmation .btn {
-    background-color: white;
-    display: block;
-    margin: 0 auto;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    padding: 10px;
-    cursor: pointer;
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .confirmation .btn:hover {
-    border: 1px solid white;
-    background-color: transparent;
-    color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
 }
