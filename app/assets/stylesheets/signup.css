@@ -1,0 +1,47 @@
+.sign-up-form {
+  background-color: #cdb4db;
+  color: black;
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.sign-up-form h2 {
+  color: white;
+  margin-bottom: 12px;
+}
+
+.field {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.input {
+  width: 100%;
+  padding: 7px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+.sign-up-form .btn {
+  background-color: white;
+  border: 1px solid white;
+  display: block;
+  margin: 30px auto;
+  outline: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  width: 200px;
+  transition: background-color 300ms ease-in-out;
+}
+
+.sign-up-form .btn:hover {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
